@@ -9,7 +9,7 @@
 <body class="bg-black overflow-x-hidden">
     <div class="flex flex-col items-center w-[100vw] h-[100vh] space-y-8 px-[20%]">
         <div class="w-full max-w-[1240px]">
-            <div class="w-full border-l-2 border-orange-600 flex justify-between h-[8rem] mb-4">
+            <div class="w-full border-l-2 border-orange-600 flex justify-between md:h-[8rem] mb-4 sm:flex-col md:flex-row sm:h-fit">
                 <div class="flex pl-4 py-4 gap-8">
                     <img src="./img/ikra_logo.png" alt="logo">
                     <div class="flex flex-col justify-between">
@@ -18,7 +18,7 @@
                         <img class="w-[1.5rem] h-[1.5rem] cursor-pointer" src="./img/youtube.png" alt="youtube">
                     </div>
                 </div>
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-4 sm:p-4 md:flex-col-reverse lg:flex-row">
                     <div class="w-full min-w-[10rem] text-2xl text-white font-bold">095 520 15 15</div>
                     <div class="flex items-center gap-2">
                         <div class="w-[2rem] h-[2rem] flex justify-center items-center rounded-full bg-orange-600 text-black text-[10px] font-bold">UA</div>
@@ -26,8 +26,8 @@
                     </div>
                 </div>
             </div>
-            <div id="cards" class="w-full grid grid-cols-4 gap-2"></div>
-            <div class="text-white font-small py-[1rem] border-t-2 border-b-2 border-white">
+            <div id="cards" class="w-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2"></div>
+            <div class="text-white font-small py-[1rem] mt-6 border-t-2 border-b-2 border-white">
                 <div class="w-full flex justify-end text-orange-600 font-bold">РЕКЛАМА - НАША РОБОТА.</div>
                 Ми об'єднуємо творче мислення та технічні можливості.<br>
                 Ми поважаємо та цінуємо кожного свого клієнта, незалежно від регалій та суми, прописаної в договорі,<br>
