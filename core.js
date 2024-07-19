@@ -26,6 +26,7 @@ const cards = [
 ]
 
 addCards()
+popup()
 
 function createCards() {
     let list = ""
@@ -34,7 +35,7 @@ function createCards() {
         list += `
         <div class="w-[100%] h-[8rem] relative">
             <img class="w-[100%] h-[8rem] object-cover" src="./img/${iter}.jpg">
-            <p class="absolute top-[0.5rem] left-[0.5rem] right-[0.5rem] text-center bg-black bg-opacity-70 text-white">${card}</p>
+            <p class="absolute top-[0.5rem] left-[0.5rem] right-[0.5rem] text-center font-bold bg-black bg-opacity-70 text-white">${card}</p>
         </div>
         `
         iter++
@@ -44,4 +45,15 @@ function createCards() {
 
 function addCards() {
     document.getElementById("cards").innerHTML = createCards()
+}
+
+function popup() {
+    const window = document.createElement("div")
+    window.className = "w-[100vw] h-[100vh] fixed top-0 left-0 flex justify-center items-center"
+    window.innerHTML = `
+    <div class="w-[40%] bg-white">
+        <p>Hello</p>
+    </div>
+    `
+    document.body.appendChild(window)
 }
