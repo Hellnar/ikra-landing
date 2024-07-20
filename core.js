@@ -51,8 +51,21 @@ function popup() {
     const window = document.createElement("div")
     window.className = "w-[100vw] h-[100vh] fixed top-0 left-0 flex justify-center items-center"
     window.innerHTML = `
-    <div class="w-[40%] bg-white">
-        <p>Hello</p>
+    <div class="w-[60%] bg-white rounded-lg flex flex-col items-center p-6">
+        <div class="flex items-center">
+            <p>Напишiть нам у: </p>
+            <div class="flex gap-4 items-center">
+                <img class="w-8 h-8" src="./img/w_insta.png">   
+                <img class="w-8 h-8" src="./img/w_tg.png">   
+                <img class="w-8 h-8" src="./img/w_viber.png">   
+                <img class="w-8 h-8" src="./img/w_whatsapp.png">   
+            </div>
+        </div>
+        <div class="flex items-center gap-4">
+            <p>Або залиште свiй номер </p>
+            <input type="text" class="border">
+            <p>ми Вам зателефонуємо</p>
+        </div>
     </div>
     `
     document.body.appendChild(window)
