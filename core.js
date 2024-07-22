@@ -68,10 +68,10 @@ function popup() {
         <div class="flex items-center gap-4">
             <p>Напишiть нам у: </p>
             <div class="flex gap-4 items-center">
-                <img class="w-8 h-8" src="./img/w_insta.png">   
-                <img class="w-8 h-8" src="./img/w_tg.png">   
-                <img class="w-8 h-8" src="./img/w_viber.png">   
-                <img class="w-8 h-8" src="./img/w_whatsapp.png">   
+                <a href=""><img class="w-8 h-8" src="./img/w_insta.png"></a>
+                <a href=""><img class="w-8 h-8" src="./img/w_tg.png"></a>
+                <a href=""><img class="w-8 h-8" src="./img/w_viber.png"></a>  
+                <a href=""><img class="w-8 h-8" src="./img/w_whatsapp.png"></a>   
             </div>
         </div>
         <div class="flex flex-col items-center gap-4">
