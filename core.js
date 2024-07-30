@@ -58,6 +58,14 @@ function closePopup() {
     })
 }
 
+function trackSubmission() {
+    document.getElementById("submit").addEventListener("click", () => {
+        setTimeout(() => {
+            document.getElementById("popup").remove()
+        }, 1000)
+    })
+}
+
 function popup() {
     const window = document.createElement("div")
     window.id = "popup"
@@ -68,19 +76,27 @@ function popup() {
         <div class="flex items-center gap-4">
             <p>Напишiть нам у: </p>
             <div class="flex gap-4 items-center">
-                <a href=""><img class="w-8 h-8" src="./img/w_insta.png"></a>
-                <a href=""><img class="w-8 h-8" src="./img/w_tg.png"></a>
-                <a href=""><img class="w-8 h-8" src="./img/w_viber.png"></a>  
-                <a href=""><img class="w-8 h-8" src="./img/w_whatsapp.png"></a>   
+                <a href="https://www.instagram.com/direct/t/103694637697525"><img class="w-8 h-8" src="./img/w_insta.png"></a>
+                <a href="https://t.me/raikra"><img class="w-8 h-8" src="./img/w_tg.png"></a>
+                <a href="viber://+380955201515"><img class="w-8 h-8" src="./img/w_viber.png"></a>  
+                <a href="https://wa.me/+380955201515"><img class="w-8 h-8" src="./img/w_whatsapp.png"></a>   
             </div>
         </div>
         <div class="flex flex-col items-center gap-4">
             <p>Або залиште свiй номер </p>
-            <input type="text" class="border">
-            <p>ми Вам зателефонуємо</p>
+            <p>ми Вам зателефонуємо!</p>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form target="_blank" action="https://formspree.io/f/xanwoqwv" method="POST">
+                <input type="phone" name="phone" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+                <!-- your other form fields go here -->
+                <div class="flex justify-center mt-4">
+                    <button id="submit" type="submit" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Вiдправити</button>
+                </div>
+            </form>
         </div>
     </div>
     `
     document.body.appendChild(window)
     closePopup()
+    trackSubmission()
 }
