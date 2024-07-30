@@ -71,14 +71,14 @@ function popup() {
     window.id = "popup"
     window.className = "w-[100vw] h-[100vh] fixed top-0 left-0 flex justify-center items-center bg-black bg-opacity-80"
     window.innerHTML = `
-    <div class="md:w-[60%] sm:w-[80%] bg-white rounded-lg flex flex-col gap-4 items-center relative p-6">
+    <div class="md:w-[60%] sm:w-[80%] bg-white rounded-lg flex flex-col gap-4 items-center relative p-6 pt-14 md:pt-6">
         <button id="close-popup" class="absolute top-2 right-2 font-bold text-xl px-4 py-2 hover:bg-gray-200 rounded-lg">x</button>
         <div class="flex items-center gap-4">
             <p>Напишiть нам у: </p>
             <div class="flex gap-4 items-center">
-                <a href="https://www.instagram.com/direct/t/103694637697525"><img class="w-8 h-8" src="./img/w_insta.png"></a>
+                <a href="https://www.instagram.com/raikra2002/"><img class="w-8 h-8" src="./img/w_insta.png"></a>
                 <a href="https://t.me/raikra"><img class="w-8 h-8" src="./img/w_tg.png"></a>
-                <a href="viber://+380955201515"><img class="w-8 h-8" src="./img/w_viber.png"></a>  
+                <a href="viber://chat?number=380955201515"><img class="w-8 h-8" src="./img/w_viber.png"></a>  
                 <a href="https://wa.me/+380955201515"><img class="w-8 h-8" src="./img/w_whatsapp.png"></a>   
             </div>
         </div>
